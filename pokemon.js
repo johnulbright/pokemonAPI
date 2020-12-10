@@ -48,10 +48,7 @@ function getBalls(arrayOfBalls) {
       .then(res => res.json())
       .then(json => {
         let card = document.createElement("div");
-        //let picture = document.createElement("img");
-        let picture=document.getElementById('PicHolder').innerHTML = '<img src="' + userpic + '"     
-        style="width:60px;height:66px" alt="user picture">'
-
+        let picture = document.createElement("img");
         let count = document.createElement("h2");
         picture.src = json.sprites.default;
         card.className = "ball";
